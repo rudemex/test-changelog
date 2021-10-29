@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release": "standard-version",
-    "commit": "cz"
+    "commit": "cz",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
