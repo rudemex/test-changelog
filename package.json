@@ -1,6 +1,6 @@
 {
   "name": "test-changelog",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/rudemex/test-changelog#readme",
   "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "standard-version": "^9.3.2"
