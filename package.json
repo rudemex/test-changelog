@@ -1,9 +1,10 @@
 {
   "name": "test-changelog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "release": "standard-version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/rudemex/test-changelog/issues"
   },
-  "homepage": "https://github.com/rudemex/test-changelog#readme"
+  "homepage": "https://github.com/rudemex/test-changelog#readme",
+  "devDependencies": {
+    "standard-version": "^9.3.2"
+  }
 }
