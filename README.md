@@ -1,4 +1,4 @@
 # test-changelog
- This is a test for the chnage log
+ This is a test for the change log
 
 edit readme

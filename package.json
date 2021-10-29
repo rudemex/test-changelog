@@ -18,7 +18,5 @@
     "url": "https://github.com/rudemex/test-changelog/issues"
   },
   "homepage": "https://github.com/rudemex/test-changelog#readme",
-  "devDependencies": {
-    "standard-version": "^9.3.2"
-  }
+
 }
