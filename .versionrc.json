@@ -1,5 +1,5 @@
 {
-  "header": "# CHANGELOG",
+  "header": "<div><h1>CHANGELOG</h1> All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.</div>",
   "types": [
     {"type": "feat", "section": "✨ Features"},
     {"type": "fix", "section": "\uD83D\uDC1B Bug Fixes"},
