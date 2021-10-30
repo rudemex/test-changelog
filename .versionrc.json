@@ -4,10 +4,11 @@
     {"type": "fix", "section": "\uD83D\uDC1B Bug Fixes"},
     {"type": "chore", "section": "\uD83D\uDEA7 Chore", "hidden": false},
     {"type": "docs", "section": "\uD83D\uDCDD Docs", "hidden": false},
-    {"type": "style", "hidden": true},
     {"type": "refactor", "section": "♻️Refactor", "hidden": false},
+    {"type": "test", "section": "🧪 Test", "hidden": false},
+    {"type": "build", "section": "🛠 Build", "hidden": false},
     {"type": "perf", "hidden": true},
-    {"type": "test", "hidden": true}
+    {"type": "style", "hidden": true}
   ],
   "commitUrlFormat": "https://github.com/rudemex/test-changelog/commit/{{hash}}",
   "compareUrlFormat": "https://github.com/rudemex/test-changelog/compare/{{previousTag}}...{{currentTag}}",
