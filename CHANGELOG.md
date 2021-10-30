@@ -1,4 +1,11 @@
-# CHANGELOG
+<div><h1>CHANGELOG</h1> All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.</div>
+### [0.0.4](https://github.com/rudemex/test-changelog/compare/v0.0.3...v0.0.4) (2021-10-30)
+
+
+### 🐛 Bug Fixes
+
+* **.versionrc.json:** change header configuration ([4d98281](https://github.com/rudemex/test-changelog/commit/4d982813553b096bcb6a0bd1d86830495990ad2c))
+
 ### [0.0.3](https://github.com/rudemex/test-changelog/compare/v0.0.2...v0.0.3) (2021-10-30)
 
 
