@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/rudemex/test-changelog/compare/v0.0.7...v0.0.8) (2021-10-30)
+
+
+### 🚧 Chore
+
+* **.versionrc.json:** add new scopes to changelog ([a376ba5](https://github.com/rudemex/test-changelog/commit/a376ba5b3bc70bda4356daa5214562232ddce61b)), closes [#1](https://github.com/rudemex/test-changelog/issues/1)
+
 ### [0.0.7](https://github.com/rudemex/test-changelog/compare/v0.0.6...v0.0.7) (2021-10-30)
 
 
