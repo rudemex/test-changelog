@@ -37,7 +37,8 @@
   },
   "standard-version": {
     "skip": {
-      "bump": true
+      "bump": true,
+      "tag": true
     }
   }
 }
