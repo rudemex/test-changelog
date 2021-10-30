@@ -1,4 +1,11 @@
-CHANGELOG
+# CHANGELOG
+### [0.0.3](https://github.com/rudemex/test-changelog/compare/v0.0.2...v0.0.3) (2021-10-30)
+
+
+### ♻️Refactor
+
+* **index:** remove console msg ([b95af5d](https://github.com/rudemex/test-changelog/commit/b95af5d1d8ac0d55d705c5ce669722fd49104cf0))
+
 ### [0.0.2](https://github.com/rudemex/test-changelog/compare/v0.0.1...v0.0.2) (2021-10-30)
 
 
