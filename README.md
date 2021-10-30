@@ -1,3 +1,3 @@
 # test-changelog
 
-Test to changelog to gh
+Test to changelog to github

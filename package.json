@@ -38,8 +38,8 @@
   "standard-version": {
     "skip": {
       "bump": true,
-      "commit": false,
-      "tag": false
+      "commit": true,
+      "tag": true
     }
   }
 }
