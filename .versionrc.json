@@ -1,5 +1,5 @@
 {
-  "header": "Changelog",
+  "header": "# CHANGELOG",
   "types": [
     {"type": "feat", "section": "✨ Features"},
     {"type": "fix", "section": "\uD83D\uDC1B Bug Fixes"},
