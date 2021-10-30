@@ -13,5 +13,8 @@
   "commitUrlFormat": "https://github.com/rudemex/test-changelog/commit/{{hash}}",
   "compareUrlFormat": "https://github.com/rudemex/test-changelog/compare/{{previousTag}}...{{currentTag}}",
   "issuePrefixes": ["#"],
-  "issueUrlFormat": "https://github.com/rudemex/test-changelog/issues/{{id}}"
+  "issueUrlFormat": "https://github.com/rudemex/test-changelog/issues/{{id}}",
+  "skip": {
+    "bump": false
+  }
 }
