@@ -1,12 +1,12 @@
 {
   "header": "Changelog",
   "types": [
-    {"type": "feat", "section": "Features"},
-    {"type": "fix", "section": "Bug Fixes"},
-    {"type": "chore", "hidden": true},
-    {"type": "docs", "hidden": true},
+    {"type": "feat", "section": "✨ Features"},
+    {"type": "fix", "section": "\uD83D\uDC1B Bug Fixes"},
+    {"type": "chore", "section": "\uD83D\uDEA7 Chore", "hidden": false},
+    {"type": "docs", "section": "\uD83D\uDCDD Docs", "hidden": false},
     {"type": "style", "hidden": true},
-    {"type": "refactor", "hidden": true},
+    {"type": "refactor", "section": "♻️Refactor", "hidden": false},
     {"type": "perf", "hidden": true},
     {"type": "test", "hidden": true}
   ],
