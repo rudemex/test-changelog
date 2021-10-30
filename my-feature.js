@@ -1,0 +1,3 @@
+const feature = () => {
+    return 'feature'
+}
