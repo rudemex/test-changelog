@@ -3,4 +3,4 @@ const feat = require('./my-feature');
 
 console.log("hello world")
 greeting.sayHello("mex");
-feat.newFeature();
+feat.newFeature("test");
