@@ -1,4 +1,6 @@
 const greeting = require('./greeting');
-//console.log("hello world")
-greeting.sayHello("mex");
+const feat = require('./my-feature');
 
+console.log("hello world")
+greeting.sayHello("mex");
+feat.newFeature();
