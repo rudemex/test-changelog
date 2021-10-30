@@ -1,4 +1,10 @@
-const greeting = (name) => {
-    return 'hello '+name;
+const sayHello = (name) => {
+    console.log(`Hello ${name}`)
+    return `Hello ${name}`;
 }
+
+module.exports = {
+    sayHello
+}
+
 
