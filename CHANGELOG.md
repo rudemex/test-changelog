@@ -1,4 +1,11 @@
 Changelog
+### [0.0.2](https://github.com/rudemex/test-changelog/compare/v0.0.1...v0.0.2) (2021-10-30)
+
+
+### 🚧 Chore
+
+* **index:** changes msg to console ([7f4c9ed](https://github.com/rudemex/test-changelog/commit/7f4c9ed590031bb71b7ff1d38a8da55be27aa501))
+
 ### 0.0.1 (2021-10-30)
 
 
