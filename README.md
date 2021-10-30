@@ -2,6 +2,3 @@
 
 Test to changelog to github
 
-test
-
-sadasd
