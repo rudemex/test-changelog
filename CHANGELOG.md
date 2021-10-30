@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/rudemex/test-changelog/compare/v0.0.3...v0.0.4) (2021-10-30)
+
+
+### 🚧 Chore
+
+* changes in version ([6eb7098](https://github.com/rudemex/test-changelog/commit/6eb70982625b3ed21579c650f38e7bfaf93949da))
+* changesssss ([dcf32f8](https://github.com/rudemex/test-changelog/commit/dcf32f86844545008cc3b70b4451d9da0b265d03))
+* edit sadsad ([acd007b](https://github.com/rudemex/test-changelog/commit/acd007bd965356fcfc3a6e9c39fdf33165e5f9ff))
+
 ### [0.0.3](https://github.com/rudemex/test-changelog/compare/v0.0.2...v0.0.3) (2021-10-30)
 
 
