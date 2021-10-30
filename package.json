@@ -39,7 +39,7 @@
     "skip": {
       "bump": true,
       "commit": true,
-      "tag": true
+      "tag": false
     }
   }
 }
