@@ -1,3 +1,0 @@
-const feature = () => {
-    return 'feature'
-}
