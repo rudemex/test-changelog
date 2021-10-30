@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/rudemex/test-changelog/compare/v0.0.1...v0.0.2) (2021-10-30)
+
+
+### 🚧 Chore
+
+* **index:** comment console ([ca92a64](https://github.com/rudemex/test-changelog/commit/ca92a64d89ef1d2b9607c49f8d10fd15a5c94ddd)), closes [#1](https://github.com/rudemex/test-changelog/issues/1)
+
+
+### ✨ Features
+
+* **my-feature:** create a new function ([6d021c1](https://github.com/rudemex/test-changelog/commit/6d021c1e92d70a2b3d854310fd74e4d04cf802bb))
+
+
+### 🐛 Bug Fixes
+
+* **my-feature:** return feature ([6d70021](https://github.com/rudemex/test-changelog/commit/6d70021f7e9e45fa8ffeb0be46d2ee212bde59a7))
+
 ### 0.0.1 (2021-10-30)
 
 
