@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/rudemex/test-changelog/compare/v0.1.3...v1.0.0) (2021-10-31)
+
+
+### 🚧 Chore
+
+* **workflow:** add body path in worflow ([38468f5](https://github.com/rudemex/test-changelog/commit/38468f583165464c4b27b0a818384f8e1fcb5c83))
+
 ### [0.1.3](https://github.com/rudemex/test-changelog/compare/v0.1.2...v0.1.3) (2021-10-31)
 
 
