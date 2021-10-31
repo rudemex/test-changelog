@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/rudemex/test-changelog/compare/v0.0.5...v0.0.6) (2021-10-31)
+
+
+### ♻️Refactor
+
+* **publish.yml:** change use generate changelog release ([ebd0934](https://github.com/rudemex/test-changelog/commit/ebd093402c489f9343be05e66d822d62b2f8e74e))
+
 ### [0.0.5](https://github.com/rudemex/test-changelog/compare/v0.0.4...v0.0.5) (2021-10-31)
 
 
