@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://github.com/rudemex/test-changelog/compare/v1.0.4...v1.0.6) (2021-10-31)
+
+
+### 🚧 Chore
+
+* **release:** 1.0.5 ([f1a8998](https://github.com/rudemex/test-changelog/commit/f1a89987281e921f808b65e7b539ae8d4cb9780e))
+
 ### [1.0.5](https://github.com/rudemex/test-changelog/compare/v1.0.4...v1.0.5) (2021-10-31)
 
 ### [1.0.1](https://github.com/rudemex/test-changelog/compare/v1.0.0...v1.0.1) (2021-10-31)
