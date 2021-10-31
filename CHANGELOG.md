@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/rudemex/test-changelog/compare/v0.0.4...v0.0.5) (2021-10-31)
+
+
+### 👨‍💻 Chore
+
+* **changelog:** add tags to generate changelog action ([339d0f3](https://github.com/rudemex/test-changelog/commit/339d0f322024646429f79da8b6245461138bd275))
+* **workflow:** add get tag refs ([b41372c](https://github.com/rudemex/test-changelog/commit/b41372cc107458048ae8f8e2c6f4ae5e02449d25))
+
 ### [0.0.4](https://github.com/rudemex/test-changelog/compare/v0.0.3...v0.0.4) (2021-10-31)
 
 
