@@ -7,6 +7,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 🚧 Chore
 
+* **release:** 1.0.9 ([44818fe](https://github.com/rudemex/test-changelog/commit/44818fe61116442827c3fb157d526352f26ec769))
+* **release:** 1.0.9 ([b69bbdc](https://github.com/rudemex/test-changelog/commit/b69bbdceec7dc31325840de5c5918cbf33ed8f9b))
+
+### [1.0.9](https://github.com/rudemex/test-changelog/compare/v1.0.11...v1.0.9) (2021-10-31)
+
+
+### 🚧 Chore
+
 * **release:** 1.0.9 ([b69bbdc](https://github.com/rudemex/test-changelog/commit/b69bbdceec7dc31325840de5c5918cbf33ed8f9b))
 
 ### [1.0.9](https://github.com/rudemex/test-changelog/compare/v1.0.10...v1.0.9) (2021-10-31)
