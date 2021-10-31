@@ -2,4 +2,4 @@
 
 Test to changelog to GitHub actions
 
-[changelog](./CHANGELOG.md)
+View: [changelog](./CHANGELOG.md)
