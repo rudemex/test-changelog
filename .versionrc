@@ -17,7 +17,7 @@
   "skip": {
     "bump": false,
     "commit": false,
-    "tag": true,
+    "tag": false,
     "changelog":false
   }
 }
