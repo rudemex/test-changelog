@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/rudemex/test-changelog/compare/v0.0.3...v0.0.4) (2021-10-31)
+
+
+### 🚧 Chore
+
+* **publish.yml:** move step changelog ([b2a15da](https://github.com/rudemex/test-changelog/commit/b2a15da2e434f1637162a685f91f850bb851d906))
+
 ### [0.0.3](https://github.com/rudemex/test-changelog/compare/v0.0.2...v0.0.3) (2021-10-31)
 
 
