@@ -7,12 +7,5 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 🚧 Chore
 
+* **release:** 1.0.9 ([cfe6121](https://github.com/rudemex/test-changelog/commit/cfe61210a13dedd21946031d54f922c628bfadea))
 * **release:** 1.0.9 ([606d908](https://github.com/rudemex/test-changelog/commit/606d908279d15fcbd3992a998e9bb5aa0d3a79e8))
-
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
