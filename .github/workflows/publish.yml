@@ -1,0 +1,53 @@
+name: "Publish pkg to NPM"
+
+on:
+  workflow_dispatch:
+    inputs:
+      newVersion:
+        description: "Version to publish: v[MAJOR].[MINOR].[PATCH]"
+        required: true
+        default: '0.0.0'
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "⚙ Set up Node.js"
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: "✅ Checkout repository"
+        uses: actions/checkout@v2
+
+  publish:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: "💾 Restore Dependencies from cache"
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+      - name: "📦 Install Dependencies"
+        run: npm install
+      - name: "Release: ${{github.event.inputs.newVersion}}"
+        run: |
+          git config --global user.name "GitHub CD bot"
+          git config --global user.email "mdelgado@tresdoce.com.ar"
+          npm run release -- --release-as ${{github.event.inputs.newVersion}}
+          git push --follow-tags origin master
+      - name: "🏷️ Create Release: ${{github.event.inputs.newVersion}}"
+        uses: actions/create-release@v1
+        with:
+          tag_name: v${{github.event.inputs.newVersion}}
+          release_name: v${{github.event.inputs.newVersion}}
+          draft: false
+          prerelease: false
