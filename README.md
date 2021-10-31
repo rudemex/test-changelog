@@ -1,5 +1,5 @@
 # test-changelog
 
-Test to changelog to github actions
+Test to changelog to GitHub actions
 
 [changelog](./CHANGELOG.md)
