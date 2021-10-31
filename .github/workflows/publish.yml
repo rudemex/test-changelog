@@ -44,7 +44,7 @@ jobs:
           git config --global user.email "mdelgado@tresdoce.com.ar"
           npm run release -- --release-as ${{github.event.inputs.newVersion}}
           git push --follow-tags origin master
-      - name: "🏷️ Create Release: ${{github.event.inputs.newVersion}}"
+      - name: "🏷️ Create Release: v${{github.event.inputs.newVersion}}"
         uses: actions/create-release@v1
         with:
           tag_name: "v${{github.event.inputs.newVersion}}"
