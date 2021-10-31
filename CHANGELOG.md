@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/rudemex/test-changelog/compare/v0.0.2...v0.0.3) (2021-10-31)
+
+
+### 🐛 Bug Fixes
+
+* **publish.yml:** remove scripts git ([c52545d](https://github.com/rudemex/test-changelog/commit/c52545dd9d893bc239a16d13c1c28260a28e3cb3))
+* **versionrc:** add version traker file ([2675895](https://github.com/rudemex/test-changelog/commit/267589507f870f4265e4b5de0df410b9fae14288))
+
 ### [0.0.2](https://github.com/rudemex/test-changelog/compare/v0.0.1...v0.0.2) (2021-10-31)
 
 
