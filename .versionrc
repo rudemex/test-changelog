@@ -15,9 +15,9 @@
   "issuePrefixes": ["#"],
   "issueUrlFormat": "https://github.com/rudemex/test-changelog/issues/{{id}}",
   "skip": {
-    "bump": true,
+    "bump": false,
     "commit": false,
-    "tag": true,
+    "tag": false,
     "changelog":false
   }
 }
