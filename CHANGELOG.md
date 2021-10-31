@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/rudemex/test-changelog/compare/v0.1.0...v0.1.1) (2021-10-31)
+
+
+### 🐛 Bug Fixes
+
+* **workflow:** fix workflow release ([3d298ad](https://github.com/rudemex/test-changelog/commit/3d298ad0944929c581b8ecdb1b38463f8f04d01a))
+
 ## [0.1.0](https://github.com/rudemex/test-changelog/compare/v0.0.4...v0.1.0) (2021-10-31)
 
 
