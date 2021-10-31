@@ -51,5 +51,6 @@ jobs:
           release_name: "v${{github.event.inputs.newVersion}}"
           body: |
             All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
+          body_path: CHANGELOG.md
           draft: false
           prerelease: false
