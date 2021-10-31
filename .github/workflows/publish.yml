@@ -57,6 +57,9 @@ jobs:
       - name: Changelog
         uses: scottbrenner/generate-changelog-action@master
         id: Changelog
+        with:
+          from-tag: "v0.0.4"
+          to-tag: "v${{github.event.inputs.newVersion}}"
         env:
           REPO: ${{ github.repository }}
       - name: "🏷️ Create Release: v${{github.event.inputs.newVersion}}"
