@@ -1,3 +1,4 @@
+#https://birtony.medium.com/setting-up-automated-release-workflow-with-github-actions-628dbca2446e
 name: "Publish pkg to NPM"
 
 on:
@@ -56,7 +57,9 @@ jobs:
           release_name: "v${{github.event.inputs.newVersion}}"
           body: |
             ${{ steps.Changelog.outputs.changelog }}
+
             ---
-            All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
+
+            > 💬 All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
           draft: false
           prerelease: false
