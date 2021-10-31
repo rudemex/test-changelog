@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/rudemex/test-changelog/compare/v0.0.4...v0.1.0) (2021-10-31)
+
+
+### ✨ Features
+
+* **gh-workflow:** add github action workflow ([c3072ee](https://github.com/rudemex/test-changelog/commit/c3072ee74984ad8ac9906788000638ed47ba19d8))
+
 ### [0.0.4](https://github.com/rudemex/test-changelog/compare/v0.0.3...v0.0.4) (2021-10-30)
 
 
