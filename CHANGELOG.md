@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/rudemex/test-changelog/compare/v0.1.2...v0.1.3) (2021-10-31)
+
+
+### 🐛 Bug Fixes
+
+* **workflow:** edit workflow for gh actions ([8f0a660](https://github.com/rudemex/test-changelog/commit/8f0a660b7a3284582274041349844b639d694274))
+
 ### [0.1.2](https://github.com/rudemex/test-changelog/compare/v0.1.1...v0.1.2) (2021-10-31)
 
 
