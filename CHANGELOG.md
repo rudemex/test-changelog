@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/rudemex/test-changelog/compare/v0.0.1...v0.0.2) (2021-10-31)
+
+
+### 🐛 Bug Fixes
+
+* **publish.yml:** comment git tag ([388738a](https://github.com/rudemex/test-changelog/commit/388738a42e97e63405693d3da166e28c20380a57))
+* **version:** skip tag ([0f85187](https://github.com/rudemex/test-changelog/commit/0f8518752788869a9e35c26acc032c97c13b7868))
+* **workflow:** edit git actions to changelog ([4b32a5b](https://github.com/rudemex/test-changelog/commit/4b32a5b389dd5b053693fd596e1b32a64e170a33))
+* **workflows:** edit workflow, add git commit changelog ([3c5681e](https://github.com/rudemex/test-changelog/commit/3c5681ee6d333124e0e111a195c89dc05e359620))
+
 ### 0.0.1 (2021-10-31)
 
 
