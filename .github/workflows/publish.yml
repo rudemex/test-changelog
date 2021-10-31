@@ -55,7 +55,6 @@ jobs:
           tag_name: "v${{github.event.inputs.newVersion}}"
           release_name: "v${{github.event.inputs.newVersion}}"
           body: |
-            # Changelog
-            All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
+            ${{ steps.Changelog.outputs.changelog }}
           draft: false
           prerelease: false
