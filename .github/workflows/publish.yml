@@ -47,7 +47,7 @@ jobs:
       - name: "🏷️ Create Release: ${{github.event.inputs.newVersion}}"
         uses: actions/create-release@v1
         with:
-          tag_name: v${{github.event.inputs.newVersion}}
-          release_name: v${{github.event.inputs.newVersion}}
+          tag_name: "v${{github.event.inputs.newVersion}}"
+          release_name: "v${{github.event.inputs.newVersion}}"
           draft: false
           prerelease: false
