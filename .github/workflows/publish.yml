@@ -42,7 +42,7 @@ jobs:
         run: |
           git config --global user.name "GitHub CD bot"
           git config --global user.email "mdelgado@tresdoce.com.ar"
-          #npm run release -- --release-as ${{github.event.inputs.newVersion}}
+          npm run release -- --release-as ${{github.event.inputs.newVersion}}
           #git push --follow-tags origin master
       - name: Changelog
         uses: scottbrenner/generate-changelog-action@master
