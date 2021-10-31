@@ -38,7 +38,7 @@ jobs:
           key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
       - name: "📦 Install Dependencies"
         run: npm install
-      - name: "Release: ${{github.event.inputs.newVersion}}"
+      - name: "Release: v${{github.event.inputs.newVersion}}"
         run: |
           git config --global user.name "GitHub CD bot"
           git config --global user.email "mdelgado@tresdoce.com.ar"
@@ -49,5 +49,7 @@ jobs:
         with:
           tag_name: "v${{github.event.inputs.newVersion}}"
           release_name: "v${{github.event.inputs.newVersion}}"
+          body: |
+            All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
           draft: false
           prerelease: false
