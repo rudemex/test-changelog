@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/rudemex/test-changelog/compare/v0.0.6...v0.0.7) (2021-10-31)
+
+
+### 👨‍💻 Chore
+
+* **publish.yml:** se ajustan los actions ([6d21484](https://github.com/rudemex/test-changelog/commit/6d214842c06cd1dc5dd16bf74b915f59a278c846))
+
 ### [0.0.6](https://github.com/rudemex/test-changelog/compare/v0.0.5...v0.0.6) (2021-10-31)
 
 
