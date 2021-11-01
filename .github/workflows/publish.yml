@@ -11,6 +11,7 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+  GITHUB_EMAIL: ${{ secrets.GH_EMAIL }}
 
 jobs:
   setup:
@@ -45,7 +46,7 @@ jobs:
       - name: "Release: v${{github.event.inputs.newVersion}}"
         run: |
           git config --global user.name "GitHub CD bot"
-          git config --global user.email "mdelgado@tresdoce.com.ar"
+          git config --global user.email "${GITHUB_EMAIL}"
           npm run release -- --release-as ${{github.event.inputs.newVersion}}
           git push --follow-tags origin master
 
