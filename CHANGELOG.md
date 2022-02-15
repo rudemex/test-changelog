@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/rudemex/test-changelog/compare/v0.0.7...v0.0.8) (2022-02-15)
+
+
+### 👨‍💻 Chore
+
+* **workflow:** add env to email ([d37fa09](https://github.com/rudemex/test-changelog/commit/d37fa09ab37b39ff597eda66727e10c17a0369b9))
+
 ### [0.0.7](https://github.com/rudemex/test-changelog/compare/v0.0.6...v0.0.7) (2021-10-31)
 
 
