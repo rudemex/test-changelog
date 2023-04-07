@@ -6,4 +6,4 @@ View: [changelog](./CHANGELOG.md)
 
 --- 
 
-Lorem ipsum
+Lorem ipsum sarasa

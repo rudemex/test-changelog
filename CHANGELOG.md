@@ -2,6 +2,17 @@
 
 ---
 
+## [4.0.0](https://github.com/rudemex/test-changelog/compare/v3.1.0...v4.0.0) (2023-04-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* edit readme for major
+
+### ✨ Features
+
+* edit readme for major ([8aee0dc](https://github.com/rudemex/test-changelog/commit/8aee0dcb32bd955202f30cbd74893f53de1237b7))
+
 ## [3.1.0](https://github.com/rudemex/test-changelog/compare/v3.0.1...v3.1.0) (2023-04-07)
 
 
