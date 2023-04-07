@@ -1,0 +1,49 @@
+{
+  "name": "test-changelog",
+  "version": "0.0.0",
+  "description": "this is a description",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudemex/test-changelog/issues"
+  },
+  "homepage": "https://github.com/rudemex/test-changelog#readme",
+  "scripts": {
+    "pre-commit": "lint-staged",
+    "test": "echo 'lorem ipsum'",
+    "postinstall": "husky install",
+    "release": "standard-version"
+  },
+  "prettier": {
+    "semi": true,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "printWidth": 100,
+    "trailingComma": "all"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,json,md}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudemex/test-changelog.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "standard-version": "^9.5.0"
+  }
+}
