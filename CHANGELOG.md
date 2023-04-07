@@ -2,6 +2,13 @@
 
 ---
 
+### [3.0.1](https://github.com/rudemex/test-changelog/compare/v3.0.0...v3.0.1) (2023-04-07)
+
+
+### 👨‍💻 Chores
+
+* edit readme ([27f4376](https://github.com/rudemex/test-changelog/commit/27f43764fd647b052bc568f5bfc2301668ec9947))
+
 ## [3.0.0](https://github.com/rudemex/test-changelog/compare/v2.0.0...v3.0.0) (2023-04-07)
 
 
