@@ -2,6 +2,13 @@
 
 ---
 
+### 0.1.1 (2023-04-07)
+
+
+### 👨‍💻 Chores
+
+* initial commit ([8a4f2d1](https://github.com/rudemex/test-changelog/commit/8a4f2d1345be4b0e2db729046d51f3bd1284e316))
+
 ## [0.1.0](https://github.com/rudemex/test-changelog/compare/v0.0.1...v0.1.0) (2023-04-07)
 
 
