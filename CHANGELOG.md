@@ -2,6 +2,13 @@
 
 ---
 
+## [3.1.0](https://github.com/rudemex/test-changelog/compare/v3.0.1...v3.1.0) (2023-04-07)
+
+
+### ✨ Features
+
+* add thing in readme ([94ba371](https://github.com/rudemex/test-changelog/commit/94ba371d43c100f315193daf858b7e5b06b54382))
+
 ### [3.0.1](https://github.com/rudemex/test-changelog/compare/v3.0.0...v3.0.1) (2023-04-07)
 
 
