@@ -2,6 +2,25 @@
 
 ---
 
+## [3.0.0](https://github.com/rudemex/test-changelog/compare/v2.0.0...v3.0.0) (2023-04-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* edit project
+* edit project
+
+### ✨ Features
+
+* edit project ([08561fa](https://github.com/rudemex/test-changelog/commit/08561fa1f1fd96b1a34e4f527036346e4b30afbf))
+* edit project ([df365e1](https://github.com/rudemex/test-changelog/commit/df365e11231cacf045ee72350fd47ae8a3990a47))
+
+
+### 👨‍💻 Chores
+
+* edit readme ([1c7062f](https://github.com/rudemex/test-changelog/commit/1c7062fb533c6bb05aa8185f3d598a4592cbbe3a))
+* initial commit ([a325435](https://github.com/rudemex/test-changelog/commit/a325435364fbb1ec4727fc4a6b4e15fdb3ebebcf))
+
 ## 2.0.0 (2023-04-07)
 
 
