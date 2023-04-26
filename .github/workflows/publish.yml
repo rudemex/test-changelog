@@ -55,8 +55,12 @@ jobs:
           changelog=$(yarn release --dry-run --packageFiles 'version.txt' --bumpFiles 'version.txt' | awk -v RS="---" 'NR==2')
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
-          echo "changelog=$changelog" >> $GITHUB_OUTPUT
-          echo "tag=$tag" >> $GITHUB_OUTPUT
+          {
+              "changelog=$changelog"
+              "tag=$tag"
+          } >> $GITHUB_OUTPUT
+          #echo "changelog=$changelog" >> $GITHUB_OUTPUT
+          #echo "tag=$tag" >> $GITHUB_OUTPUT
 
       #- name: "📄 Create Changelog"
       #  uses: Bullrich/generate-release-changelog@master
