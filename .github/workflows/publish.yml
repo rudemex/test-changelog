@@ -55,8 +55,8 @@ jobs:
           changelog=$(yarn release --dry-run --packageFiles 'version.txt' --bumpFiles 'version.txt' | awk -v RS="---" 'NR==2')
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
-          echo "TAG=$tag" >> $GITHUB_ENV
-          echo "::set-output name=changelog::$(echo "$changelog")" >> $GITHUB_ENV
+          echo "TAG=$tag" >> $GITHUB_OUTPUT
+          echo "::set-output name=changelog::$(echo "$changelog")" >> $GITHUB_OUTPUT
           #echo "CHANGELOG=$changelog" >> $GITHUB_OUTPUT
 
       #- name: "📄 Create Changelog"
