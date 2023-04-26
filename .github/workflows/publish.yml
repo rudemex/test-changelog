@@ -61,10 +61,10 @@ jobs:
           #echo "::set-output name=changelog::$(echo "$changelog")" >> $GITHUB_OUTPUT
 
       - name: "📄 Create Changelog"
-      #  uses: Bullrich/generate-release-changelog@master
         id: Changelog
         run: |
           echo "changelog=$(cat tempChangelog.md)" >> $GITHUB_OUTPUT
+      #  uses: Bullrich/generate-release-changelog@master
       #  env:
       #    REPO: ${{ github.repository }}
 
@@ -74,7 +74,7 @@ jobs:
           tag_name: "${{steps.Release.outputs.TAG}}"
           release_name: "${{steps.Release.outputs.TAG}}"
           body: |
-            ${{ steps.Changelog.outputs.changelog }}
+            ${{steps.Changelog.outputs.changelog}}
                         
             ---
             
