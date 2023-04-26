@@ -67,12 +67,11 @@ jobs:
 
       - name: "🚀 Publish Release"
         uses: actions/create-release@v1
-        run: |
-          body=$(cat tempChangelog.txt)
         with:
           tag_name: "${{steps.Release.outputs.TAG}}"
           release_name: "${{steps.Release.outputs.TAG}}"
           body: |
+            body=$(cat tempChangelog.txt)
             echo "$body"
             
             ---
