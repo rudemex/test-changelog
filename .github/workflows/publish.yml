@@ -56,7 +56,7 @@ jobs:
           echo "$changelog"
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
-          #echo "CHANGELOG=$changelog" >> $GITHUB_OUTPUT
+          echo "CHANGELOG=$changelog" >> $GITHUB_OUTPUT
           echo "TAG=$tag" >> $GITHUB_OUTPUT
 
       #- name: "📄 Create Changelog"
@@ -71,8 +71,7 @@ jobs:
           tag_name: "${{steps.Release.outputs.TAG}}"
           release_name: "${{steps.Release.outputs.TAG}}"
           body: |
-            body=$(cat tempChangelog.txt)
-            echo "$body"
+            ${{ steps.Release.outputs.CHANGELOG }}
             
             ---
             
