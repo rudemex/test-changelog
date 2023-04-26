@@ -52,8 +52,7 @@ jobs:
         run: |
           git config --global user.name "GitHub CI/CD bot"
           git config --global user.email "${GITHUB_EMAIL}"
-          changelog=$(yarn release --dry-run --packageFiles 'version.txt' --bumpFiles 'version.txt' | awk -v RS="---" 'NR==2') >> tempChangelog.md
-          echo "$changelog"
+          changelog=$(yarn release --packageFiles 'version.txt' --bumpFiles 'version.txt' --dry-run | awk -v RS="---" 'NR==2') >> tempChangelog.md
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
           echo "TAG=$tag" >> $GITHUB_OUTPUT
