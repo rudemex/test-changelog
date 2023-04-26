@@ -57,8 +57,8 @@ jobs:
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
           echo "TAG=$tag" >> $GITHUB_OUTPUT
+          echo "CHANGELOG=$changelog" >> $GITHUB_OUTPUT
           #echo "::set-output name=changelog::$(echo "$changelog")" >> $GITHUB_OUTPUT
-          #echo "CHANGELOG=$changelog" >> $GITHUB_OUTPUT
 
       #- name: "📄 Create Changelog"
       #  uses: Bullrich/generate-release-changelog@master
@@ -73,8 +73,7 @@ jobs:
           release_name: "${{steps.Release.outputs.TAG}}"
           body: |
             ${{ steps.Release.outputs.TAG }}
-            $(cat tempChangelog.md)
-            
+                        
             ---
             
             > 💬 All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
