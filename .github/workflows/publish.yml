@@ -52,11 +52,11 @@ jobs:
         run: |
           git config --global user.name "GitHub CI/CD bot"
           git config --global user.email "${GITHUB_EMAIL}"
-          changelog=$(yarn release --dry-run --packageFiles 'version.txt' --bumpFiles 'version.txt' | awk -v RS="---" 'NR==2')
+          changelog=$(yarn release --dry-run --packageFiles 'version.txt' --bumpFiles 'version.txt' | awk -v RS="---" 'NR==2') >> tempChangelog.txt
           echo "$changelog"
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
-          echo "CHANGELOG=$changelog" >> $GITHUB_OUTPUT
+          #echo "CHANGELOG=$changelog" >> $GITHUB_OUTPUT
           echo "TAG=$tag" >> $GITHUB_OUTPUT
 
       #- name: "📄 Create Changelog"
@@ -71,7 +71,8 @@ jobs:
           tag_name: "${{steps.Release.outputs.TAG}}"
           release_name: "${{steps.Release.outputs.TAG}}"
           body: |
-            ${{ steps.Release.outputs.CHANGELOG }}
+            #${{ steps.Release.outputs.CHANGELOG }}
+            $(cat tempChangelog.txt)
             
             ---
             
