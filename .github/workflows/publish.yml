@@ -58,7 +58,7 @@ jobs:
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
           echo "tag=$tag" >> $GITHUB_OUTPUT
-          echo "changelog=$changelog" >> $GITHUB_OUTPUT
+          #echo "changelog=$changelog" >> $GITHUB_OUTPUT
 
       #- name: "📄 Create Changelog"
       #  id: Changelog
