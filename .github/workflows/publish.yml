@@ -53,12 +53,12 @@ jobs:
           git config --global user.name "GitHub CI/CD bot"
           git config --global user.email "${GITHUB_EMAIL}"
           changelog=$(yarn release --packageFiles 'version.txt' --bumpFiles 'version.txt' --dry-run | awk -v RS="---" 'NR==2')
-          echo $changelog
-          #echo $changelog >> tempChangelog.md
+          #echo $changelog
+          echo $changelog >> tempChangelog.md
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
-          echo "TAG=$tag" >> $GITHUB_OUTPUT
-          echo "::set-output name=changelog::$changelog"
+          echo "¨tag=$tag" >> $GITHUB_OUTPUT
+          echo "changelog=$(cat tempChangelog.md)" >> $GITHUB_OUTPUT
           #echo "CHANGELOG=$changelog" >> $GITHUB_OUTPUT
           #echo "::set-output name=changelog::$(echo "$changelog")" >> $GITHUB_OUTPUT
 
@@ -73,8 +73,8 @@ jobs:
       - name: "🚀 Publish Release"
         uses: actions/create-release@v1
         with:
-          tag_name: "${{steps.Release.outputs.TAG}}"
-          release_name: "${{steps.Release.outputs.TAG}}"
+          tag_name: "${{steps.Release.outputs.tag}}"
+          release_name: "${{steps.Release.outputs.tag}}"
           body: |
             ${{ steps.Release.outputs.changelog }}
             
