@@ -75,7 +75,7 @@ jobs:
           tag_name: "${{steps.Release.outputs.TAG}}"
           release_name: "${{steps.Release.outputs.TAG}}"
           body: |
-            ${{ cat tempChangelog.md }}
+            echo "$(cat tempChangelog.md)"
              
             ---
             
