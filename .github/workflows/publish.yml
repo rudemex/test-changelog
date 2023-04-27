@@ -53,13 +53,12 @@ jobs:
           git config --global user.name "GitHub CI/CD bot"
           git config --global user.email "${GITHUB_EMAIL}"
           changelog=$(yarn release --packageFiles 'version.txt' --bumpFiles 'version.txt' --dry-run | awk -v RS="---" 'NR==2')
-          #echo $changelog
-          echo $changelog >> tempChangelog.md
+          echo $changelog
+          #echo $changelog >> tempChangelog.md
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
-          echo "¨tag=$tag" >> $GITHUB_OUTPUT
-          #echo "changelog=$changelog" >> $GITHUB_OUTPUT
-          #echo "::set-output name=changelog::$(echo "$changelog")" >> $GITHUB_OUTPUT
+          echo "tag=$tag" >> $GITHUB_OUTPUT
+          echo "changelog=$changelog" >> $GITHUB_OUTPUT
 
       #- name: "📄 Create Changelog"
       #  id: Changelog
@@ -70,11 +69,16 @@ jobs:
       #    REPO: ${{ github.repository }}
 
       - name: "🚀 Publish Release"
-        uses: ncipollo/release-action@v1
+        uses: actions/create-release@v1
         with:
-          tag: "${{steps.Release.outputs.tag}}"
-          name: "${{steps.Release.outputs.tag}}"
-          bodyFile: tempChangelog.md
+          tag_name: "${{steps.Release.outputs.tag}}"
+          release_name: "${{steps.Release.outputs.tag}}"
+          body: |
+            ${{ steps.Release.outputs.changelog }}
+            
+            ---
+            
+            > 💬 All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
           draft: false
           prerelease: false
 
