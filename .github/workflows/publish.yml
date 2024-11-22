@@ -14,12 +14,14 @@ jobs:
     name: "Setup"
     steps:
       - name: "⚙ Set up Node.js"
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "20"
 
       - name: "✅ Checkout repository"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
   release:
     runs-on: ubuntu-latest
@@ -27,22 +29,24 @@ jobs:
     needs: setup
     steps:
       - name: "⚙ Set up Node.js"
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "20"
 
       - name: "✅ Checkout repository"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: "💾 Restore Dependencies from cache"
-        uses: actions/cache@v3
+      - name: "💾 Restore packages from cache"
+        uses: actions/cache@v4
         with:
           path: |
             node_modules
             */*/node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       - name: "📦 Install packages"
         run: yarn install
@@ -52,34 +56,29 @@ jobs:
         run: |
           git config --global user.name "GitHub CI/CD bot"
           git config --global user.email "${GITHUB_EMAIL}"
-          changelog=$(yarn release --packageFiles 'version.txt' --bumpFiles 'version.txt' --dry-run | awk -v RS="---" 'NR==2')
-          #echo $changelog
-          echo $changelog >> tempChangelog.txt
+          yarn release --packageFiles 'version.txt' --bumpFiles 'version.txt'    
           git push --follow-tags origin master
           tag=$(git describe --tags $(git rev-list --tags --max-count=1))
           echo "tag=$tag" >> $GITHUB_OUTPUT
           #echo "changelog=$changelog" >> $GITHUB_OUTPUT
 
-      #- name: "📄 Create Changelog"
-      #  id: Changelog
-      #  run: |
-      #    echo "changelog=$(cat tempChangelog.md)" >> $GITHUB_OUTPUT
-      #  uses: Bullrich/generate-release-changelog@master
-      #  env:
-      #    REPO: ${{ github.repository }}
+      - name: "📄 Create Changelog"
+        uses: Bullrich/generate-release-changelog@master
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
 
       - name: "🚀 Publish Release"
         uses: actions/create-release@v1
         with:
           tag_name: "${{steps.Release.outputs.tag}}"
           release_name: "${{steps.Release.outputs.tag}}"
-          body_path: tempChangelog.txt
-          #body: |
-          #  ${{ steps.Release.outputs.changelog }}
-          #
-          #  ---
-          #
-          #  > 💬 All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
+
+            ---
+
+            > 💬 All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
           draft: false
           prerelease: false
 
