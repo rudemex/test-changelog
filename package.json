@@ -39,11 +39,11 @@
     "url": "git+https://github.com/rudemex/test-changelog.git"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
     "standard-version": "^9.5.0"
   }
 }
