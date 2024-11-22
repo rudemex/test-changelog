@@ -14,12 +14,14 @@ jobs:
     name: "Setup"
     steps:
       - name: "⚙ Set up Node.js"
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "20"
 
       - name: "✅ Checkout repository"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
   release:
     runs-on: ubuntu-latest
@@ -27,22 +29,24 @@ jobs:
     needs: setup
     steps:
       - name: "⚙ Set up Node.js"
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "20"
 
       - name: "✅ Checkout repository"
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: "💾 Restore Dependencies from cache"
-        uses: actions/cache@v3
+      - name: "💾 Restore packages from cache"
+        uses: actions/cache@v4
         with:
           path: |
             node_modules
             */*/node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
       - name: "📦 Install packages"
         run: yarn install
@@ -70,9 +74,9 @@ jobs:
           release_name: "${{steps.Release.outputs.tag}}"
           body: |
             ${{ steps.Changelog.outputs.changelog }}
-            
+
             ---
-            
+
             > 💬 All notable changes to this project will be documented in [Changelog](${{ github.event.repository.html_url }}/blob/master/CHANGELOG.md) file.
           draft: false
           prerelease: false
